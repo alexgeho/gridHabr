@@ -21,12 +21,14 @@ body {
 .container {
   display: grid;
   gap: 20px;
+  height: 100vh;
 
   grid-template-areas:
     "A A A A   A A A A   A A A A"
-    "B B B B   D D D D   E E E E"
-    "B B B B   D D D D   C C C C";
+    "B B B B   B B B B   B B C C"
+    "B B B B   B B B B   B B C C";
 }
+
 
 .box-1 {
   grid-area: A;
@@ -36,12 +38,4 @@ body {
 }
 .box-3 {
   grid-area: C;
-}
-
-.box-4 {
-  grid-area: D;
-}
-
-.box-5 {
-  grid-area: E;
 }
